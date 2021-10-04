@@ -1,4 +1,4 @@
-export default async () =>{
+const getData = async () =>{
     let value;
     await fetch("https://gorest.co.in/public/v1/users")
     .then((resp) => resp.json())
@@ -10,3 +10,4 @@ export default async () =>{
     });
     return value
 }
+export default getData

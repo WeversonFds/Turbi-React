@@ -32,7 +32,7 @@ const Home = () => {
         dispatch(setAlert({'notification':false})) 
     }
     useEffect(() => {
-        if(list.length === 1) consultApi()
+        if(list.length === 0) consultApi()
     }, []);
         return(
             <>

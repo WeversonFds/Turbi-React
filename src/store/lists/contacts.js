@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit'
 export const counterSlice = createSlice({
   name: 'contacts',
   initialState: {
-    list: [{'name':'weve', 'email':'teste@live.com', 'id':1}],
+    list: [],
     fulllist: [],
   },
   reducers: {
@@ -11,7 +11,7 @@ export const counterSlice = createSlice({
       state.fulllist = state.list
     },
     addData: (state, action) => {
-      if(state.list.length == 0) { action.payload.id = 1 }
+      if(state.list.length === 0) { action.payload.id = 1 }
       (!action.payload.id) ? action.payload.id = (state.list.at(-1).id) + 1 :  action.payload.id = action.payload.id
       state.list.push(action.payload)
       state.fulllist = state.list

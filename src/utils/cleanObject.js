@@ -1,5 +1,5 @@
 function cleanObject(objectValue){
-    let newObject = new Object;
+    let newObject = {}
     for (var prop in objectValue) {
         newObject[prop] = '';
     }

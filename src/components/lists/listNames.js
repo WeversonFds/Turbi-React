@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
@@ -19,7 +18,6 @@ export default function InteractiveList() {
     const dispatch = useDispatch()
     const listItems = useSelector((state) => state.contacts.list)
     const [dense] = React.useState(false);
-    const [secondary] = React.useState(false);
 
     const onDelete = (id) => {
       dispatch(removeData(id));
