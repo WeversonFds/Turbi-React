@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+}
+.navbar{
+    box-shadow: 3px -6px 29px 1px rgb(0 0 0 / 22%);
+    width: 15%;
+    padding: 40px 0px;
+    .navItem{
+        padding: 10px 30px;
+        background-color: black;
+    }
+}
+h1{
+    font-size: 20px;
+}
+h2{
+    font-size:20px !important
+}
+h3{
+    font-size:16px !important
+}
+h4{
+    font-size:14px !important
+}
+.content{
+    width: 85%;
+}
